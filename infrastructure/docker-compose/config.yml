@@ -1,0 +1,15 @@
+auth:
+  type: DISABLED
+kafka:
+  clusters:
+    - bootstrapServers: kafka-broker-1:9092,kafka-broker-2:9092,kafka-broker-3:9092
+      name: dev
+      properties: {}
+      readOnly: false
+      schemaRegistry: http://schema-registry:8081
+      schemaRegistrySsl:
+        keystoreLocation: /etc/kafkaui/uploads/posc_keystore.jks
+        keystorePassword: Q26ZnwYcACUR8gMa
+rbac:
+  roles: []
+webclient: {}
