@@ -139,7 +139,7 @@ class OrderApplicationServiceTest {
                 .build();
 
         Customer customer = new Customer();
-        customer.setId(new CustomerId(CUSTOMER_ID));
+
 
         Restaurant restaurantResponse = Restaurant.Builder.newBuilder()
                 .restaurantId(new RestaurantId(createOrderCommand.restaurantId()))
